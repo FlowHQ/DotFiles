@@ -1,0 +1,9 @@
+[user]
+	name = Matt Britt
+	email = mattybritt@gmail.com
+[mergetool]
+	keepBackup = true
+[color]
+	ui = true
+[core]
+	editor = open -a 'Sublime Text 2'

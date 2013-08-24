@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/mattbritt/.oh-my-zsh'
+let g:netrw_dirhist_2='/Users/mattbritt/.rvm/gems/ruby-1.9.3-p385/gems/rspec-2.14.1'
+let g:netrw_dirhist_3='/Users/mattbritt/.rvm/gems/ruby-1.9.3-p385/gems/rspec-2.14.1/lib'
+let g:netrw_dirhist_4='/Users/mattbritt/Documents/Apps/RG/app/controllers'
+let g:netrw_dirhist_5='/Users/mattbritt/Documents/Apps/RG'
+let g:netrw_dirhist_6='/Users/mattbritt/Documents/Apps/RG/app'
+let g:netrw_dirhist_7='/Users/mattbritt/Documents/Apps/RG/app/helpers'
+let g:netrw_dirhist_8='/Users/mattbritt/Documents/Apps/RG'
+let g:netrw_dirhist_9='/Users/mattbritt/.oh-my-zsh'
