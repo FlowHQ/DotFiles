@@ -6,4 +6,4 @@
 [color]
 	ui = true
 [core]
-	editor = open -a 'Sublime Text 2'
+	editor = open -a vim
