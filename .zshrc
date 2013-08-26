@@ -29,13 +29,6 @@ alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles NO && killa
 
 # GIT ALIASES
 alias g=git
-alias ga='git add'
-alias gb='git branch'
-alias gc='git commit -v'
-alias gl='git pull'
-alias gp='git push'
-alias gs='git status -sb'
-alias gho='$(git remote -v 2> /dev/null | grep github | sed -e "s/.*git\:\/\/\([a-z]\.\)*/\1/" -e "s/\.git$//g" -e "s/.*@\(.*\)$/\1/g" | tr ":" "/" | tr -d "\011" | sed -e "s/^/open http:\/\//g")'
 
 #Bundler
 alias bi='bundle install'
