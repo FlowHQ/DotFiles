@@ -1,3 +1,4 @@
+autocmd!
 execute pathogen#infect()
 filetype plugin indent on
 
@@ -170,9 +171,9 @@ nnoremap <leader>. :call OpenTestAlternate()<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " RUNNING TESTS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>t :silent call RunTestFile()<cr>
-map <leader>T :silent call RunNearestTest()<cr>
-map <leader>a :silent call RunTests('')<cr>
+map <leader>t :call RunTestFile()<cr>
+"map <leader>T :silent call RunNearestTest()<cr>
+"map <leader>a :silent call RunTests('')<cr>
 
 function! RunTestFile(...)
     if a:0

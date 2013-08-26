@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/mattbritt/Documents/Apps/RG/spec/models'
-let g:netrw_dirhist_2='/Users/mattbritt/Documents/Apps/RG'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/mattbritt/Documents/Apps/RG'
+let g:netrw_dirhist_2='/Users/mattbritt/Documents/Apps/RG/app'
+let g:netrw_dirhist_3='/Users/mattbritt/Documents/Apps/RG'
+let g:netrw_dirhist_4='/Users/mattbritt/Documents/Apps/RG/config'
+let g:netrw_dirhist_5='/Users/mattbritt/Documents/Apps/RG'
