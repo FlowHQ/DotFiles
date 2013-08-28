@@ -30,6 +30,8 @@
 .zsh-update
 .zsh_history
 .zshrc.back
+.subversion
+.vim/.netrwhist
 Desktop/
 Documents/
 Downloads/
