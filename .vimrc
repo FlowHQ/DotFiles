@@ -19,6 +19,7 @@ set hidden
 set number
 set history=10000
 set expandtab
+set smartindent
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -123,6 +124,7 @@ function! FocusOnFile()
 endfunction
 " Reload in chrome
 map <leader>l :w\|:silent !reload-chrome<cr>
+map <leader>e :Explore<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
@@ -138,6 +140,20 @@ function! InsertTabWrapper()
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" RENAME CURRENT FILE
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+map <leader>n :call RenameFile()<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MAPS TO JUMP TO SPECIFIC COMMAND-T TARGETS AND FILES
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

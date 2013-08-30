@@ -5,7 +5,7 @@ set tabstop 8
 set findmergefiles 0
 set maxgraphpct 50
 set maxwidth 16
-set cmitmode patch
+set cmitmode tree
 set wrapcomment none
 set autoselect 1
 set autosellen 40
@@ -25,12 +25,12 @@ set diffcontext 3
 set selectbgcolor gray85
 set extdifftool opendiff
 set perfile_attrs 0
-set geometry(main) 1392x856+88+32
+set geometry(main) 1392x856+5+27
 set geometry(state) normal
 set geometry(topwidth) 1392
 set geometry(topheight) 407
 set geometry(pwsash0) "392 1"
 set geometry(pwsash1) "588 1"
-set geometry(botwidth) 490
+set geometry(botwidth) 880
 set geometry(botheight) 444
 set permviews {}
