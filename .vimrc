@@ -125,7 +125,6 @@ endfunction
 " Reload in chrome
 map <leader>l :w\|:silent !reload-chrome<cr>
 map <leader>e :Explore<cr>
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
 " Indent if we're at the beginning of a line. Else, do completion.
@@ -141,6 +140,16 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ACK SEARCH
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! SearchWithAck()
+    let search_options  = input('Search:')
+    if search_options != '' 
+        exec ':Ack ' . search_options
+    endif
+endfunction
+map <leader>s :call SearchWithAck()<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " RENAME CURRENT FILE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
