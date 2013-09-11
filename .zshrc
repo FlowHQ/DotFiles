@@ -6,6 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="flowhqtheme"
+DISABLE_CORRECTION="true"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -13,6 +14,7 @@ ZSH_THEME="flowhqtheme"
 alias ..='cd ..'            # Go up one directory
 alias c='clear'
 alias zsh='vim ~/.zshrc'
+
 
 #Projects
 alias flowsubl='subl ~/Documents/Apps/FlowHQ'
@@ -29,7 +31,6 @@ alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles NO && killa
 
 # GIT ALIASES
 alias g=git
-
 #Bundler
 alias bi='bundle install'
 
@@ -62,3 +63,6 @@ source $ZSH/oh-my-zsh.sh
 #
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:~/bin
+
+
