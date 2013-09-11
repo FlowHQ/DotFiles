@@ -6,7 +6,6 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="flowhqtheme"
-DISABLE_CORRECTION="true"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -58,6 +57,8 @@ alias bi='bundle install'
 plugins=(git battery)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct
+unsetopt correct_all
 
 # Customize to your needs...
 #
