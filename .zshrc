@@ -60,8 +60,8 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct
 unsetopt correct_all
 
-# Customize to your needs...
-#
+#Remove some git aliases
+unalias gst
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:~/bin
