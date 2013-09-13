@@ -16,13 +16,8 @@ alias zsh='vim ~/.zshrc'
 
 
 #Projects
-alias flowsubl='subl ~/Documents/Apps/FlowHQ'
-alias flowhq='cd ~/Documents/Apps/FlowHQ'
-alias select='cd ~/Documents/Apps/Select'
-alias selectsubl='subl ~/Documents/Apps/Select'
-alias rg='cd ~/Documents/Apps/RG'
-alias rgsubl='subl ~/Documents/Apps/RG'
-
+alias flowhq='cd ~/projects/FlowHQ'
+alias rg='cd ~/projects/RG'
 
 # Mac Helpers
 alias show_hidden="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
@@ -32,6 +27,10 @@ alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles NO && killa
 alias g=git
 #Bundler
 alias bi='bundle install'
+
+#Rake
+alias rdbm='rake db:migrate'
+alias rdbtp='rake db:test:prepare'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
